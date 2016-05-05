@@ -1,2 +1,2 @@
 # placeholder-cats
-Training exercise with placeholder cat images
+Web training exercise with placeholder cat images.
