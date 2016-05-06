@@ -176,6 +176,14 @@ background: linear-gradient(to bottom,  rgba(71,71,71,1) 0%,rgba(38,38,38,1) 100
 }
 
 /*
+ * Contact form
+ */
+
+#contactForm {
+  min-height: 394px;
+}
+
+/*
  * Affix and center
  */
 
