@@ -49,20 +49,25 @@
             <div class="col-md-6 col-md-offset-3">
                 <!-- Form -->
                 <h2>Contact Us</h2>
-                <form>
+                <form data-toggle="validator" role="form">
                 <div class="form-group">
                   <label for="inputName">Name</label>
-                  <input type="name" class="form-control" id="inputName" placeholder="Name">
+                  <input type="name" class="form-control" id="inputName" placeholder="Name" data-error="What is your name?" required>
+                  <div class="help-block with-errors"></div>
                 </div>
                 <div class="form-group">
                   <label for="inputEmail">Email address</label>
-                  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Sorry, that email doesn't look right to me." required>
+                  <div class="help-block with-errors"></div>
                 </div>
                 <div class="form-group">
                     <label for="inputTextArea">Comments</label>
-                    <textarea class="form-control" id="inputTextArea" rows="4" placeholder="Comments, Concerns, Complaints, Compliments"></textarea>
+                    <textarea class="form-control" id="inputTextArea" rows="4" placeholder="Comments, Concerns, Complaints, Compliments" data-error="Cat got your tongue?" required></textarea>
+                    <div class="help-block with-errors"></div>
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
               </form><!-- /Form -->
             </div>
         </div>
@@ -80,11 +85,12 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.assets/js/"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
-        window.jQuery || document.write('<script src="assets/js//vendor/jquery.min.assets/js/"><\/script>')
+        window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')
     </script>
-    <script src="assets/js//bootstrap.min.assets/js/"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/validator.min.js"></script>
 </body>
 
 </html>
